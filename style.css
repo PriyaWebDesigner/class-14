@@ -8,19 +8,24 @@
     background-image: url('Images/Screenshot\ 2024-03-06\ 105919.png');
     height: 300px;
     color: aqua;
-    overflow: hidden;
+    overflow: auto;
     /* overflow-y: hidden;
     overflow-x: hidden; */
      */
 }
-.para{
-     color: aliceblue;
-}
+
 
 .project{
     /* background-color: aqua; */
     margin-top: 5px;
 }
+.heading{
+    margin-top: 20px;
+    line-height: 1.4;
+    color:indianred;
+}
+
+
 .project-item{
     float: left;
     height: 200px;
@@ -30,9 +35,8 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    color: aqua;
     margin: 3px;
-    overflow: hidden;
+    overflow: visible;
 
 
 }
@@ -56,8 +60,6 @@
 @media screen and (max-width:720px) {
     .project-item{
         width: 32%;
-        color: orangered;
-        background-image: url(Images/bg\ pic1.jpg);
     }
     
 }
@@ -70,19 +72,28 @@
     
 }
 
-@media screen and (max-width:391px) {
+ @media screen and (max-width:391px) {
     .project-item{
         width: 31.5%;
-        color:aquamarine;
-        font-size: 20px;
+        /* color:aquamarine;
+        font-size: 20px; */
+    }
+    
+} 
+
+@media screen and (max-width:327px) {
+    .project-item{
+        width: 48%;
     }
     
 }
 
 
-@media screen and (max-width:327px) {
+
+
+@media screen and (max-width:300px) {
     .project-item{
-        width: 31%;
+        width: 100%;
     }
     
 }
